@@ -1,0 +1,744 @@
+{
+	"info": {
+		"_postman_id": "b83d1ff3-e4fc-4a7f-9330-50979937728f",
+		"name": "MoEnagge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33969186"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"ritesh_kumar\",\r\n    \"password\": \"ritesh\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/v1/auth/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "user-registerd",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"username\": \"ritesh_kumar\",\r\n    \"password\": \"ritesh\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/v1/auth/register",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"auth",
+										"register"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "150"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"96-PB1OqyfyuFXT6YtgkQzS0B9hmqA\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 20 Jul 2024 17:26:07 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"statusCode\": 201,\n    \"data\": {\n        \"_id\": \"669bf32f6530e6489e49ac75\",\n        \"username\": \"ritesh_kumar\",\n        \"__v\": 0\n    },\n    \"message\": \"User registered successfully\",\n    \"success\": true\n}"
+						}
+					]
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"ritesh_kumar\",\r\n    \"password\": \"ritesh\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/v1/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "user-logged-in",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"username\": \"ritesh_kumar\",\r\n    \"password\": \"ritesh\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/v1/auth/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"auth",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjliZjMyZjY1MzBlNjQ4OWU0OWFjNzUiLCJ1c2VybmFtZSI6InJpdGVzaF9rdW1hciIsImlhdCI6MTcyMTQ5NjM5OCwiZXhwIjoxNzIxNTgyNzk4fQ.1_Rs-jXYxHf3mA30QB-_mFLLquwkIN8OBOD6I6jPE0Y; Path=/; HttpOnly; Secure; SameSite=None"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjliZjMyZjY1MzBlNjQ4OWU0OWFjNzUiLCJpYXQiOjE3MjE0OTYzOTgsImV4cCI6MTcyMjM2MDM5OH0.2aK-rAOhMeOEeXHZojrpH-VizlL-_r0M3pUIFtK5rsA; Path=/; HttpOnly; Secure; SameSite=None"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "149"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"95-XD2GQ+cGQpbqOEODoSDZZDYXRqQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 20 Jul 2024 17:26:38 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"statusCode\": 200,\n    \"data\": {\n        \"_id\": \"669bf32f6530e6489e49ac75\",\n        \"username\": \"ritesh_kumar\",\n        \"__v\": 0\n    },\n    \"message\": \"User logged in successfully\",\n    \"success\": true\n}"
+						}
+					]
+				},
+				{
+					"name": "logout",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/v1/auth/logout",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"logout"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "user-logged-out",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8000/api/v1/auth/logout",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"auth",
+										"logout"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "accessToken=; Path=/; Expires=Thu, 01 Jan 1970 00:00:00 GMT"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "refreshToken=; Path=/; Expires=Thu, 01 Jan 1970 00:00:00 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "91"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"5b-e09d4ZwBWj1KI9OlVXnclIFvKM0\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 20 Jul 2024 17:27:08 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"statusCode\": 200,\n    \"data\": \"User logged out successfully\",\n    \"message\": \"Success\",\n    \"success\": true\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Response Code",
+			"item": [
+				{
+					"name": "response-code",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/v1/response-code/filter/100",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"response-code",
+								"filter",
+								"100"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "response-filtered",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8000/api/v1/response-code/filter/100",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"response-code",
+										"filter",
+										"100"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "145"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"91-KVFpKbCJBBYAI+BX5ezBIZ5Fcdw\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 20 Jul 2024 18:53:41 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"statusCode\": 200,\n    \"data\": [\n        {\n            \"_id\": \"669c07b512de0cb7da5e16b2\",\n            \"code\": \"100\",\n            \"__v\": 0\n        }\n    ],\n    \"message\": \"Response code fetched successfully\",\n    \"success\": true\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "List",
+			"item": [
+				{
+					"name": "create-list",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"continue\",\r\n    \"code\": 100,\r\n    \"userId\": \"669bf32f6530e6489e49ac75\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/v1/list",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"list"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "list-created",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"server error\",\r\n    \"code\": 500,\r\n    \"userId\": \"669bf32f6530e6489e49ac75\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/v1/lists",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"lists"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "230"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"e6-N7fl+8Vam2HvSdEwqtj/mn84tOw\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 20 Jul 2024 18:21:18 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"statusCode\": 201,\n    \"data\": {\n        \"_id\": \"669c001e1deb70af0cbd6d76\",\n        \"name\": \"continue\",\n        \"code\": \"100\",\n        \"userId\": \"669bf32f6530e6489e49ac75\",\n        \"creationDate\": \"2024-07-20T18:21:18.018Z\",\n        \"__v\": 0\n    },\n    \"message\": \"List created successfully\",\n    \"success\": true\n}"
+						}
+					]
+				},
+				{
+					"name": "get-list-data",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/v1/list",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"list"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "fetched-the-list-data",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8000/api/v1/list",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"list"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "241"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"f1-BiH9GlAzf745FYF706V0UGTEY6Q\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 20 Jul 2024 18:22:03 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"statusCode\": 200,\n    \"data\": [\n        {\n            \"_id\": \"669c001e1deb70af0cbd6d76\",\n            \"name\": \"continue\",\n            \"code\": \"100\",\n            \"userId\": {\n                \"_id\": \"669bf32f6530e6489e49ac75\"\n            },\n            \"creationDate\": \"2024-07-20T18:21:18.018Z\",\n            \"__v\": 0\n        }\n    ],\n    \"message\": \"Lists fetched successfully\",\n    \"success\": true\n}"
+						}
+					]
+				},
+				{
+					"name": "update-list",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Internal Server Error\",\r\n    \"code\": 500\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/v1/list/669c001e1deb70af0cbd6d76",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"list",
+								"669c001e1deb70af0cbd6d76"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "list-updated",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Internal Server Error\",\r\n    \"code\": 500\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/v1/list/669c001e1deb70af0cbd6d76",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"list",
+										"669c001e1deb70af0cbd6d76"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "243"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"f3-/8nrWtGnm7gzaipL7IimHRbh0BY\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 20 Jul 2024 18:24:15 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"statusCode\": 200,\n    \"data\": {\n        \"_id\": \"669c001e1deb70af0cbd6d76\",\n        \"name\": \"Internal Server Error\",\n        \"code\": \"500\",\n        \"userId\": \"669bf32f6530e6489e49ac75\",\n        \"creationDate\": \"2024-07-20T18:21:18.018Z\",\n        \"__v\": 0\n    },\n    \"message\": \"List updated successfully\",\n    \"success\": true\n}"
+						}
+					]
+				},
+				{
+					"name": "delete-list",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/v1/list/669c001e1deb70af0cbd6d76",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"list",
+								"669c001e1deb70af0cbd6d76"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "list-deleted",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8000/api/v1/list/669c001e1deb70af0cbd6d76",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"list",
+										"669c001e1deb70af0cbd6d76"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "243"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"f3-iBjaLKjVrj2iguzDMvyX6nIdD3M\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 20 Jul 2024 18:24:51 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"statusCode\": 200,\n    \"data\": {\n        \"_id\": \"669c001e1deb70af0cbd6d76\",\n        \"name\": \"Internal Server Error\",\n        \"code\": \"500\",\n        \"userId\": \"669bf32f6530e6489e49ac75\",\n        \"creationDate\": \"2024-07-20T18:21:18.018Z\",\n        \"__v\": 0\n    },\n    \"message\": \"List deleted successfully\",\n    \"success\": true\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
